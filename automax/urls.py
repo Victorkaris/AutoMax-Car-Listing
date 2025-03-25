@@ -22,10 +22,13 @@ from django.urls import re_path
 from django.views.static import serve
 
 from main import urls as main_app_urls
+from users import urls as users_app_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(main_app_urls))
+    path('', include(main_app_urls)),
+    path('', include(users_app_urls)),
+
 ]
 
 # if settings.DEBUG:
