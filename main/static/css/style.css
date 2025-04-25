@@ -113,3 +113,13 @@ body.index {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+/* Add styles for image preview */
+.image-preview {
+    margin-bottom: 10px; /* Space between image and file input */
+}
+
+.file-input input[type="file"] {
+    display: block; /* Ensure file input is on a new line */
+    margin-top: 10px;
+}
